@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row p-4">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <h3><strong>PICO Y PLACA PREDICTOR</strong></h3>
+        <input class="form-control" [(ngModel)]="plate" type="text" placeholder="Enter your Plate Number"
+               onkeyup="javascript:this.value=this.value.toUpperCase();" required>
+        <my-date-picker name="mydate" [options]="myDatePickerOptions" [(ngModel)]="model" required></my-date-picker>
+        <input type="time"  class="form-control" [(ngModel)]="time" required>
+        <button class="btn btn-primary" (click)="checkPicoPlaca(model, plate, time)">VERIFY PICOYPLACA</button>
+        <br><br>
+        <h3 id="message"></h3>
+      </div>
+      <div class="col-md-4"></div>
+  </div>
+</div>
