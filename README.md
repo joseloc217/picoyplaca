@@ -9,7 +9,7 @@ Steps for run the project
 
     Download the project
     Have a node.js and Angular CLI environment installed
-    Run "npm install" to install all dependencies
+    Go to the root project and run "npm install" to install all dependencies
     Then, run "ng serve --open" 
 
 
